@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+label.field-required::after {
+  content: '*';
+  margin-left: 3px;
+  color: red;
+}
+
+.input-no-border {
+  border: none;
+}
+.input-no-outlie {
+  outline: none;
+}
+
+.bulk-action {
+  -webkit-box-shadow: 1px 3px 4px 1px rgba(74, 72, 74, 0.66);
+  -moz-box-shadow: 1px 3px 4px 1px rgba(74, 72, 74, 0.66);
+  box-shadow: 1px 3px 4px 1px rgba(74, 72, 74, 0.66);
+}
+
+.warning-modal-header {
+  background-color: #ffc107;
+  color: aliceblue;
+}
+.btn {
+  font-size: 12px;
+}
+@media only screen and (max-width: 576px) {
+  .group-btn-todo {
+    margin-top: 10px;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .sidebar-mobile {
+    max-width: 98%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    background: #fff;
+    margin-left: -100%;
+  }
+  .open {
+    margin-left: 0;
+  }
+  .close-sidebar-mobile {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0px;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (min-width: 421px) {
+  .open-sidebar-mobile,
+  .close-sidebar-mobile {
+    display: none;
+  }
+}
